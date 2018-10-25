@@ -16,10 +16,10 @@ public class ExemploStatic {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Alumno alumno1 = new Alumno("Pedro", 7.5f);
-        alumno1.Datos();
-        alumno1.setDireccion("123456789", "pedro@gmail.com");
-        alumno1.Datos();
+        Alumno delegado = new Alumno("Pedro", 7.5f);
+        delegado.mostrarDatos();
+        delegado.setDireccion("123456789", "pedro@gmail.com");
+        delegado.mostrarDatos();
     }
     
 }
