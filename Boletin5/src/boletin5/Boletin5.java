@@ -16,17 +16,17 @@ public class Boletin5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Conta conta1 = new Conta("Pedro", "1234", 500);
-        Conta conta2 = new Conta("Marta", "5678", 420);
-        conta1.visualizar();
-        conta2.visualizar();
-        conta1.ingreso(-30);
-        conta2.reintegro(20);
-        System.out.println(conta1.getSaldo());
-        System.out.println(conta2.getSaldo());
-        conta1.transferencia(conta2, 50);
-        System.out.println(conta1.getSaldo());
-        System.out.println(conta2.getSaldo());
+        Cuenta cuentaABanca = new Cuenta("Pedro", "1234", 500);
+        Cuenta cuentaSantander = new Cuenta("Marta", "5678", 420);
+        cuentaABanca.visualizar();
+        cuentaSantander.visualizar();
+        cuentaABanca.ingreso(-30);
+        cuentaSantander.reintegro(20);
+        System.out.println(cuentaABanca.getSaldo());
+        System.out.println(cuentaSantander.getSaldo());
+        cuentaABanca.transferencia(cuentaSantander, 50);
+        System.out.println(cuentaABanca.getSaldo());
+        System.out.println(cuentaSantander.getSaldo());
     }
     
 }

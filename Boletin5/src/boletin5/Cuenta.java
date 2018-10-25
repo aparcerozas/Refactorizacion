@@ -9,21 +9,21 @@ package boletin5;
  *
  * @author aparcerozas
  */
-public class Conta {
+public class Cuenta {
     //Atributos
-    private String nome;
+    private String nombre;
     private String numero;
     private double saldo;
     //Constructores
-    public Conta(){}
-    public Conta(String nome, String numero, double saldo){
-        this.nome = nome;
+    public Cuenta(){}
+    public Cuenta(String nombre, String numero, double saldo){
+        this.nombre = nombre;
         this.numero = numero;
         this.saldo = saldo;
     }
     //Getters y setters
     public String getNome(){
-        return nome;
+        return nombre;
     }
     public String getNumero(){
         return numero;
@@ -31,8 +31,8 @@ public class Conta {
     public double getSaldo(){
         return saldo;
     }
-    public void setNome(String nome){
-        this.nome = nome;
+    public void setNome(String nombre){
+        this.nombre = nombre;
     }
     public void setNumero(String numero){
         this.numero = numero;
@@ -68,11 +68,11 @@ public class Conta {
     }
     //Método visualizar
     public void visualizar(){
-        System.out.println("Nome: " + nome + "\nNúmero: " + numero 
+        System.out.println("Nombre: " + nombre + "\nNúmero: " + numero 
                 + "\nSaldo: " + saldo);
     }
     //Método transferencia
-    public void transferencia(Conta c, double x){
+    public void transferencia(Cuenta c, double x){
         if(this.saldo >= x){
             this.saldo -= x;
             c.saldo += x;
